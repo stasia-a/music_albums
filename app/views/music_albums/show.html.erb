@@ -10,6 +10,11 @@
   <%= @music_album.year %>
 </p>
 
+<p>
+  <b>List of tracks</b>
+  <table><%= render partial: "track", :collection => @tracks %></table>
+</p>
 
 <%= link_to 'Edit', edit_music_album_path(@music_album) %> |
-<%= link_to 'Back', music_albums_path %>
+<%= link_to 'Back', music_albums_path %>|
+<%= link_to 'Add track', new_music_album_track_path(@music_album, @track) %>
