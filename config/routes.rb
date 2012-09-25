@@ -1,4 +1,6 @@
 MusicAlbums::Application.routes.draw do
+  resources :music_albums
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
